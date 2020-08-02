@@ -12,7 +12,7 @@ public class Main {
         try {
             int num = scanner.nextInt();
             if (num<1 || num>10) {
-                throw new InvalidNumberException("not a valid number");
+                throw new InvalidNumberException();
             }
         }catch (InvalidNumberException en) {
             System.out.println(en.getMessage());

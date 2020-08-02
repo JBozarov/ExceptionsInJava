@@ -18,5 +18,24 @@ public class Main {
             System.out.println(en.getMessage());
         }
 
+
+        System.out.println("Please enter string value");
+        Scanner keyboard = new Scanner(System.in);
+        String name = keyboard.nextLine();
+
+        String n = "Bozarov";
+        StringBuilder someString = new StringBuilder(n);
+
+        try {
+            if (!name.equals(n)) {
+                throw new InvalidStringException();
+            }
+        }
+        catch (InvalidStringException es) {
+            System.out.println(es.getMessage());
+        }
+
+
+
     }
 }
